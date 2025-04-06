@@ -20,7 +20,7 @@ print (f"""{Fore.CYAN}
     {Fore.YELLOW}Tool to get api hash and api id of telegram account 
     {Fore.LIGHTGREEN_EX}Git & Telegram : @esfelurm\n
 """)
-Phone = input(f"{Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.GREEN}Enter your number along with the country code [Ex : +98XXXXXX]: {Fore.RED}")
+Phone = input(f"{Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.GREEN}Enter your number along with the country code [Ex : +9877324476]: {Fore.RED}")
 with requests.Session() as req:
     phone_number = Phone
     
